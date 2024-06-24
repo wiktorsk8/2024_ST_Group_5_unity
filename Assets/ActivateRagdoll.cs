@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ActivateRagdoll : MonoBehaviour
 {
+    public Movement player;
     public float positionSpring = 600;
     private ConfigurableJoint cjoint;
+
     void Start()
     {
         this.cjoint = GetComponent<ConfigurableJoint>();
